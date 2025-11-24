@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louis Foundation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+
+
+
+
+
+
+
+
+  
+
+</head>
+<body>
+
+  <a href="https://wa.me/2348133499050" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+</a>
+
+<!-- Top Bar -->
+  <div class="top-bar text-center text-md-start">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div>
+        <span><i class="fa fa-phone"></i> Nigeria Line | +2347084718138</span>
+        <span class="ms-3"><i class="fa fa-envelope"></i> Louisawodefoundation@gmail.com </span>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/16irY5Uxvh/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/louisawodengo?s=11"><i class="fab fa-twitter"></i></a>
+        <a href="http://linkedin.com/in/louis-awode"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/louisawodefoundation?igsh=MTJhM3dvanViamh4aw%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- MOBILE HEADER (like screenshot) -->
+<div class="mobile-header d-lg-none">
+
+    <!-- Logo at the top -->
+     <div class="mobile-logo text-center">
+      <a class="mobile-logo" href="index.html">
+        <img src="./assets/img/louis.jpg" alt="Logo"></a>
+    </div>
+
+    <!-- Rounded container with hamburger + donate -->
+    <div class="mobile-nav-bar">
+        <button class="mobile-hamburger" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <button onclick="openDonation()" class="mobile-donate">Donate Now</button>
+    </div>
+
+</div>
+
+
+  <!-- Navbar -->
+   
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand me-auto" href="index.html">
+        <img src="./assets/img/louis.jpg" alt="Unik Logo" height="50">
+      </a>
+
+      <a href="javascript:void(0)" class="btn btn-contact d-lg-none me-2" onclick="openDonation()">Donate</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="upcoming.html">Upcoming Event</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="javascript:void(0)" class="btn btn-contact ms-lg-3 d-none d-lg-inline-block" onclick="openDonation()">Donate</a>
+      </div>
+    </div>
+</nav>
+
+  <!-- Hero Slider -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" style="background-image:url('./assets/img/slide-image-3.jpg')">
+        <div class="carousel-caption text-start text-light">
+          <h1 class="title">Helping Hands, <br>Changing Lives.</h1>
+          <h2 class="subtitle">Every Hand Makes a Difference</h2>
+          
+          <a href="#" class="discover-btn">Donate</a>
+        </div>
+      </div>
+
+
+      <div class="carousel-item" style="background-image:url('https://demo.artureanec.com/html/helpo/img/promo_2.jpg')">
+
+        <div class="carousel-caption text-start text-light">
+          <h1 class="title">Help a Child Sleep With<br> Hope, Not Fear</h1>
+          <h2 class="subtitle">Bring Hope to the Homeless</h2>
+         
+          <a href="#" class="discover-btn">Discover</a>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image:url('https://demo.artureanec.com/html/helpo/mono/img/promo_1.jpg')">
+        <div class="carousel-caption text-start text-light">
+          <h1 class="title">Support Our Mission</h1>
+          <h2 class="subtitle">Bring Hope to the Homeless</h2>
+          <p class="desc">Together we can make a difference for our furry friends.</p>
+          <a href="#" class="discover-btn">Join Us</a>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image:url('https://demo.artureanec.com/html/helpo/img/promo_1.jpg')">
+        <div class="carousel-caption text-start text-light">
+          <h1 class="title">Every Donation Matters</h1>
+          <h2 class="subtitle">Your Kindness Fills Empty Plates</h2>
+          <p class="desc">Together, we can make sure no child suffers from hunger again.</p>
+          <a href="#" class="discover-btn">Contribute</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <!-- About Us Section -->
+<section id="about" class="py-5" style="background-color:#f8f7f4;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Side -->
+      <div class="about-section col-lg-6 mb-4 mb-lg-0">
+        <small class="text-uppercase text-muted">About Us</small>
+        <h2 class="fw-bold" style="color:#2c2f48;">
+          Help is Our <span style="color:#6a6b90;"> Main <br>Goal Ever</span>
+        </h2>
+        <a href="http://127.0.0.1:5500/about.html" class="btn btn-outline-warning mt-4 px-4 py-2 rounded-pill fw-semibold">More About</a>
+      </div>
+
+      <!-- Right Side -->
+      <div class="section-container col-lg-6">
+        
+        <p><strong>At the Louis Awode Foundation (LAF), we believe that every individual — regardless of age, background, or ability — deserves the opportunity to thrive.</strong></p>
+        <p>Through compassion, empowerment, and education, we are changing lives and building a future where students, families, and people with disabilities can rise together.</p>
+        <p>We are more than a foundation — we are a movement of helping hands making lasting impact in communities across the world.</p>
+      </div>
+    </div>
+
+    <!-- Counters -->
+    <div class="subtitle row text-center mt-5">
+      <div class="plus col-md-4 mb-4">
+        <h6 class="fw-semibold text-secondary">People We Helped</h6>
+        <h2 class="fw-bold display-5 text-dark"><span class="counter" data-target="200">0</span>k</h2>
+      </div>
+      <div class="plus col-md-4 mb-4">
+        <h6 class="fw-semibold text-secondary">Events We Have Held</h6>
+        <h2 class="fw-bold display-5 text-dark"><span class="counter" data-target="150">0</span>+</h2>
+      </div>
+      <div class="plus col-md-4 mb-4">
+        <h6 class="fw-semibold text-secondary">Closed Projects</h6>
+        <h2 class="fw-bold display-5 text-dark"><span class="counter" data-target="100">0</span>+</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="focus-section">
+    <h2>Core Focus Areas</h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Education -->
+        <div class="swiper-slide">
+          <div class="focus-card edu">
+            <div class="focus-header">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0-6l-3.5-2M12 14l3.5-2" />
+                </svg>
+              </div>
+              <h3>Education</h3>
+            </div>
+            <p>Education transforms lives. LAF is dedicated to breaking barriers and ensuring learning is accessible to all.</p>
+            <ul>
+              <li>Scholarships and educational support</li>
+              <li>Assistive technology for students</li>
+              <li>Mentorship and vocational training</li>
+              <li>School infrastructure and inclusion</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Community Development -->
+        <div class="swiper-slide">
+          <div class="focus-card community">
+            <div class="focus-header">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c2.21 0 4-1.79 4-4S14.21 0 12 0 8 1.79 8 4s1.79 4 4 4zm0 2C9.33 10 0 11.34 0 14v3a1 1 0 001 1h22a1 1 0 001-1v-3c0-2.66-9.33-4-12-4z" />
+                </svg>
+              </div>
+              <h3>Community Development</h3>
+            </div>
+            <p>We are committed to building inclusive, sustainable, and healthy communities for all.</p>
+            <ul>
+              <li>Clean water and health programs</li>
+              <li>Rural development initiatives</li>
+              <li>Community centers for inclusivity</li>
+              <li>Family and disaster relief programs</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Empowerment -->
+     <div class="swiper-slide">
+          <div class="focus-card community">
+            <div class="focus-header">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 01-8 0M12 8v4m6 4H6" />
+                </svg>
+
+              </div>
+             <h3>Empowerment</h3>
+            </div>
+            <p>We unlock potential and build self-reliance through leadership and skills development.</p>
+            <ul>
+              <li>Entrepreneurship and small business grants</li>
+              <li>Financial literacy workshops</li>
+              <li>Advocacy and leadership training</li>
+              <li>Support for persons with disabilities</li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- Global Impact -->
+        <div class="swiper-slide">
+          <div class="focus-card global">
+            <div class="focus-header">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2 12h20M12 2v20" />
+                </svg>
+              </div>
+              <h3>Global Impact</h3>
+            </div>
+            <p>Our reach extends beyond borders to create lasting, global change for equality and sustainability.</p>
+            <ul>
+              <li>Global education programs</li>
+              <li>Humanitarian relief initiatives</li>
+              <li>Climate action and sustainability</li>
+              <li>Advocacy for UN SDGs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+<!-- JOIN US SECTION -->
+  <section class="join-us-section">
+    <div class="join-us-content">
+      <h2>Join Us — Together, We Can Make a Difference!</h2>
+      <p>
+        At the Louis Awode Foundation, we stand for education, empowerment, and equality.
+        We believe in a world where every student can learn, every person with a disability can thrive,
+        and every community can flourish.
+      </p>
+      <button class="join-btn">Join Us</button>
+    </div>
+  </section>
+
+  <!-- OVERLAPPING IMAGE CARDS -->
+  <div class="image-cards">
+    <div class="card">
+      <img src="./assets/img/cloth him.jpg" alt="Get Involved Image">
+      <button>Cloth A Child</button>
+    </div>
+    <div class="card">
+      <img src="https://plus.unsplash.com/premium_photo-1683140538884-07fb31428ca6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Donate Image">
+      <button>Donate</button>
+    </div>
+    <div class="card">
+      <img src="https://themazine.com/mr/gifall-html/assets/images/resources/feature-v2-img2.jpg" alt="Become a Partner Image">
+      <button>Become a Partner</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <section class="faq-section">
+    <div class="faq-container">
+      <div class="faq-left">
+        <p class="faq-subtitle">Some of the questions people are asking</p>
+        <h2 class="faq-title">
+          Louis Awode Foundation: Frequently Asked Questions
+
+        </h2>
+        <p class="faq-desc">
+          We understand that you may want to know more about who we are, what we do, and how you can get involved. Below are some of the most frequently asked questions about our foundation, donations, and programs. If you don’t find what you’re looking for, feel free to contact us — we’ll be happy to assist you.
+        </p>
+        <button class="fancy-btn">
+          <span>HAVE QUESTIONS? CONTACT US </span>
+        </button>
+      </div>
+
+      <div class="faq-right">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How are donations used?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            Donations are used to fund the foundation's four core focus areas:
+Education: Funding scholarships, mentorship programs, digital literacy training, and vocational training for underprivileged students, first-generation graduates, and persons with disabilities.
+<br> Community Development: Supporting grassroots projects like providing clean water and healthcare in underserved communities.
+Empowerment: Implementing economic initiatives designed to strengthen local resilience.
+Global Impact: Extending the foundation's reach through strategic international partnerships, aligning efforts with the United Nations Sustainable Development Goals (SDGs).
+
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How do you measure your impact?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            The foundation measures its impact by tracking the outcomes and results of its programs within the four focus areas. This includes tracking the number of beneficiaries in educational and training programs and improvements in living standards in supported communities. Impact is assessed both qualitatively (through case studies and anecdotes from beneficiaries) and quantitatively (using numerical data).
+
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How can I make a donation?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            Specific online donation methods (e.g., a donate button or online portal) were not detailed in the search results. Generally, foundations provide information on how to donate via their official website or by contacting their team directly. For specific instructions, refer to the official Louis Awode Foundation website or contact the foundation through official channels.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Who manages the foundation?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            The foundation is managed by a leadership team under the founder, Louis Awode. The team includes a Marketing Lead, Bolatito Ajao (Secretary); Event Strategist, Oyelola Olawale Kush; and Laide Soaga - Event Publicist.  The founder himself is a first-generation university graduate with expertise in social entrepreneurship, technology, and advocacy.
+
+          </div>
+        </div>
+
+
+
+         <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is the mission of the Louis Awode Foundation?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            The mission of the Louis Awode Foundation (LAF) is to break down barriers and create opportunities for growth in communities, guided by the belief that access to education can change the course of a person's life, regardless of their background.
+
+          </div>
+        </div>
+
+         <div class="faq-item">
+          <div class="faq-question">
+            <h3>Does the foundation operate internationally?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            Yes, a component of the foundation's strategy is "Global Impact," which aims to extend its reach beyond Nigeria through strategic partnerships with international organizations to address global issues like poverty and inequality, in alignment with the UN SDGs.
+
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Where does the Foundation operates?</h3>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            The Louis Awode Foundation operates as a global initiative with a presence in both Lagos, Nigeria, and Atlanta, Georgia, US.
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+ <section class="team-section container">
+    <h5>Our Team</h5>
+    <h2>Our Volunteer</h2>
+
+    <div class="row justify-content-center g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="team-card">
+          <img src="./assets/img/m1.png" alt="Team Member">
+          <div class="team-info">
+            <h6>Louis Awode</h6>
+            <p>Founder</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="team-card">
+          <img src="./assets/img/m2.png" alt="Team Member">
+          <div class="team-info">
+            <h6>Bolatito Ajao</h6>
+            <p>Secretary</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="team-card">
+          <img src="./assets/img/m3.png" alt="Team Member">
+          <div class="team-info">
+            <h6>Taiwo Mojisola Abdulai</h6>
+            <p>Marketing — Lead</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="team-card">
+          <img src="./assets/img/m4.png" alt="Team Member">
+          <div class="team-info">
+            <h6>Laide Soaga</h6>
+            <p>Publicist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<div class="container py-5">
+    <div class="section-header">
+      <small>Our Events</small>
+      <h2>Join Upcoming Events</h2>
+    </div>
+
+    <!-- Event 1 -->
+    <div class="event-card">
+      <div class="event-info">
+        <h4>Hand For Children</h4>
+        <p>🕒 07:00 AM - 10:00 PM</p>
+        <p>📍 6391 Elgin St. Celina, Delaware 10299</p>
+        <a href="event.html" class="btn event-details-btn">Event Details</a>
+      </div>
+      <div class="event-img">
+        <img src="./assets/img/4-1-1110x504t.jpg" alt="Event">
+        <div class="category-tag">Treatment</div>
+        <div class="date-badge">30 May</div>
+      </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="event-card">
+      <div class="event-info">
+        <h4>My Capacity Is</h4>
+        <p>🕓 04:00 PM - 11:00 PM</p>
+        <p>📍 6391 Elgin St. Celina, Delaware 10299</p>
+        <a href="event.html" class="btn event-details-btn">Event Details</a>
+      </div>
+      <div class="event-img">
+        <img src="./assets/img/6-4-1110x504.jpg" alt="Event">
+        <div class="category-tag">Food</div>
+        <div class="date-badge">22 Jun</div>
+      </div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="event-card">
+      <div class="event-info">
+        <h4>Hope For The Homeless</h4>
+        <p>🕗 09:00 AM - 02:00 PM</p>
+        <p>📍 124 Grand Ave. Wilmington, Delaware 10155</p>
+        <a href="event.html" class="btn event-details-btn">Event Details</a>
+      </div>
+      <div class="event-img">
+        <img src="./assets/img/Poor-child-education-1536x708-1.webp" alt="Event">
+        <div class="category-tag">Charity</div>
+        <div class="date-badge">15 Jul</div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+<!-- Donation Modal -->
+<div id="donationModal" class="donation-modal">
+    <div class="donation-content">
+
+        <button class="close-btn" onclick="closeDonation()">&times;</button>
+
+        <h2 class="donation-title">Donate for Us</h2>
+
+        <!-- Tabs -->
+        <div class="donation-tabs">
+            <button class="tab active" onclick="switchTab(event, 'oneTime')">One-Time</button>
+            <button class="tab" onclick="switchTab(event, 'recurring')">Recurring</button>
+        </div>
+
+        <!-- Currency Dropdown -->
+        <select class="currency-select">
+            <option>US Dollar $</option>
+            <option>Nigeria ₦</option>
+            <option>Euro €</option>
+        </select>
+
+        <p class="donation-label">Use any of the below details to make your donation</p>
+
+        <!-- Amount Buttons -->
+        <div class="amount-box">
+            <button class="amount">Louis Awode GTBANK 0225120436</button>
+          
+        </div>
+
+        <!-- Custom Amount -->
+        <div class="amount-box">
+            <button class="amount">Louisawode@yahoo.com</button>
+        </div>
+
+        <!-- Proceed Button -->
+        <button class="proceed-btn">Proceed</button>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Subscribe Section -->
+  <section class="subscribe">
+  <h2>Subscribe.</h2>
+  <input type="email" placeholder="Enter your E-mail" />
+  <button>SUBMIT</button>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="row gy-4">
+        <div class="col-md-3">
+          <div class="footer-column logo-column">
+            <img src="./assets/img/logo footer.png" alt="Louis Foundation Logo">
+
+          <div class="social-icons">
+        <a href="https://www.facebook.com/share/16irY5Uxvh/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/louisawodengo?s=11"><i class="fab fa-twitter"></i></a>
+        <a href="http://linkedin.com/in/louis-awode"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/louisawodefoundation?igsh=MTJhM3dvanViamh4aw%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+      </div>
+          </div>
+   
+        </div>
+
+        <div class="footer-column contact-column col-md-3">
+          <h5>Contacts</h5>
+          <p>3 Animashaun Street, Off Bode Thomas, Surulere,<br> Lagos, Nigeria.</p>
+          <p>Phone: +234 708 471 8138</p>
+          <p>Email: Louisawodefoundation@gmail.com </p>
+        </div>
+
+        <div class="footer-column menu-column col-md-3">
+          <h5 class="foot">Menu</h5>
+          <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Event</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-column donate-column col-md-3">
+          <h5>Donate</h5>
+          <p>Help us change lives of children worldwide.</p>
+          <button class="donate-btn">Donate</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4">
+        © Louis Foundation | Designed by Unik Design
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+<script>
+    function openDonation() {
+        document.getElementById("donationModal").style.display = "flex";
+    }
+
+    function closeDonation() {
+        document.getElementById("donationModal").style.display = "none";
+    }
+
+    // Tab Switch
+    function switchTab(event, tabName) {
+        let tabs = document.querySelectorAll(".tab");
+        tabs.forEach(t => t.classList.remove("active"));
+        event.target.classList.add("active");
+    }
+</script>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const footerColumns = document.querySelectorAll(".footer-column");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          footerColumns.forEach((col, i) => {
+            setTimeout(() => col.classList.add("show"), i * 200);
+          });
+        } else {
+          // Reset animation when footer goes out of view
+          footerColumns.forEach(col => col.classList.remove("show"));
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observer.observe(document.querySelector(".footer"));
+  });
+</script>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+
+    // Pause autoplay when hovering (stop immediately)
+    const swiperEl = document.querySelector(".mySwiper");
+    swiperEl.addEventListener("mouseenter", () => swiper.autoplay.stop());
+    swiperEl.addEventListener("mouseleave", () => swiper.autoplay.start());
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const counters = document.querySelectorAll('.counter');
+  const speed = 200;
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / speed;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target.toLocaleString();
+        }
+      };
+      updateCount();
+    });
+  };
+
+  // Trigger when section is visible
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        observer.disconnect();
+      }
+    });
+  });
+
+  observer.observe(document.querySelector('#about'));
+
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[i].classList.add('active');
+}
+
+document.querySelector('.next').addEventListener('click', () => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+});
+
+// Auto Slide every 7 seconds
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}, 7000);
+
+
+</script>
+
+
+
+<script>
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  const question = item.querySelector(".faq-question");
+  const answer = item.querySelector(".faq-answer");
+  const icon = item.querySelector(".faq-icon i");
+
+  question.addEventListener("click", () => {
+    const isActive = item.classList.contains("active");
+
+    // Close all other items
+    faqItems.forEach(i => {
+      i.classList.remove("active");
+      i.querySelector(".faq-answer").style.maxHeight = null;
+      i.querySelector(".faq-icon i").classList.replace("fa-minus", "fa-plus");
+    });
+
+    // Toggle current one
+    if (!isActive) {
+      item.classList.add("active");
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      icon.classList.replace("fa-plus", "fa-minus");
+    } else {
+      item.classList.remove("active");
+      answer.style.maxHeight = null;
+      icon.classList.replace("fa-minus", "fa-plus");
+    }
+  });
+});
+
+
+</script>
+    
+</body>
+</html>
