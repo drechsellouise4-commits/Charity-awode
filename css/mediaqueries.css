@@ -1,0 +1,227 @@
+/* MOBILE HEADER FIX — Logo above hamburger & donate button */
+@media (max-width: 768px) {
+
+    .mobile-header .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* Desktop logo hidden only on mobile */
+    .navbar-brand.desktop-logo {
+        display: none !important;
+    }
+
+    /* Mobile logo visible only on mobile */
+    .mobile-logo-wrapper .navbar-brand {
+        display: inline-block !important;
+    }
+
+    .mobile-logo-wrapper img {
+        height: 55px;
+    }
+
+    .mobile-controls {
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .btn-contact {
+        padding: 6px 16px;
+        font-size: 14px;
+        border-radius: 30px;
+    }
+}
+
+
+
+
+/* Hide top bar on mobile */
+@media (max-width: 991px) {
+    .top-bar {
+        display: none !important;
+    }
+}
+
+/* Mobile custom header */
+@media (max-width: 991px) {
+
+    .mobile-header {
+        padding: 15px;
+        background: #fff;
+    }
+
+    .mobile-logo img {
+        width: 130px;
+        margin-bottom: 12px;
+    }
+
+    .mobile-nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid #f48b38; /* Same orange line as screenshot */
+        padding: 10px 18px;
+        border-radius: 40px;
+        background: #ffffff;
+    }
+
+    .mobile-hamburger {
+        border: none;
+        background: transparent;
+        font-size: 26px;
+        color: #f36c21;
+        padding: 0;
+    }
+
+    .mobile-donate {
+        background: #2c2c74;
+        color: #fff;
+        padding: 6px 22px;
+        border-radius: 25px;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+
+/* Hide desktop navbar elements on mobile */
+@media (max-width: 991px) {
+
+    /* Hide the logo inside the navbar */
+    .navbar .navbar-brand {
+        display: none !important;
+    }
+
+    /* Hide the mobile donate button inside the navbar (the one below) */
+    .navbar .btn.btn-contact.d-lg-none {
+        display: none !important;
+    }
+}
+
+
+ .navbar-toggler-icon{
+
+    display: none;
+ }
+
+
+
+
+
+ /* Remove space under navbar on mobile */
+@media (max-width: 991px) {
+
+    /* Remove bottom spacing on mobile navbar */
+    .navbar {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* Remove space under the custom mobile header */
+    .mobile-header {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* Remove container spacing if needed */
+    .mobile-header .container,
+    .navbar .container {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+
+
+
+@media (max-width: 991px) {
+    .hero-header {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #about p {
+    margin-left: 0;       /* remove negative margin */
+    max-width: 100%;      /* fit inside small screens */
+    font-size: 16px;      /* optional: better mobile readability */
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .footer-column.menu-column .footer-links {
+    text-align: left !important;
+    margin-left: 0;
+  }
+
+  .foot {
+   
+    margin-left: 0;
+  }
+
+  .footer-column.menu-column .footer-links a {
+    display: block;          /* each link on its own line */
+    text-align: left !important;
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+.fancy-btn {
+    padding: 16px 20px;
+}
+
+}
+
+
+
+
+/* MOBILE ONLY (adjust breakpoint as needed) */
+@media (max-width: 768px) {
+  .carousel-item {
+    background-position: center bottom;  /* Move image upward */
+  
+
+    background-size: cover;           /* Ensures full coverage */
+    height: 80vh;                     /* Adjust slider height */
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 120px;   /* move text down */
+  }
+}
+
+
+
